@@ -17,8 +17,8 @@ body.light-theme {
     /* Light Theme */
     --bg-primary: #e3ecfa;
     --bg-secondary: #f7fafd;
-    --text-primary: #1a1a2e;
-    --text-secondary: #333333;
+    --text-primary: #000000;
+    --text-secondary: #000000;
     --accent: #3a7bd5;
     --accent-secondary: #3a6073;
     --accent-tint: rgba(58, 123, 213, 0.08);
