@@ -883,7 +883,6 @@ body.light-theme .fa-sun {
 
 .project-description,
 .achievement-description,
-.timeline-description,
-.profile-info p {
+.timeline-description {
     text-align: justify;
 }
