@@ -881,3 +881,9 @@ body.light-theme .fa-sun {
     margin-right: 0.5rem;
 }
 
+.project-description,
+.achievement-description,
+.timeline-description,
+.profile-info p {
+    text-align: justify;
+}
