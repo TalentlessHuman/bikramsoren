@@ -138,8 +138,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // EDUCATION
     const education = [
         { degree: "B. Tech in Information Technology", university: "KALYANI GOVERNMENT ENGINEERING COLLEGE", date: "2022 - 2026", description: "Currently pursuing my bachelor's degree." },
-        { degree: "Intermediate (H.S.)", university: "UNION ACADEMY, KALCHINI", date: "2020 - 2022", description: "Percentage: 85.4%" },
-        { degree: "Matriculation", university: "UNION ACADEMY, KALCHINI", date: "2013 - 2020", description: "Percentage: 91%" }
+        { degree: "Intermediate (H.S.)", university: "UNION ACADEMY, KALCHINI", date: "2020 - 2022", description: "Percentage: 85.40%" },
+        { degree: "Matriculation", university: "UNION ACADEMY, KALCHINI", date: "2013 - 2020", description: "Percentage: 91.00%" }
     ];
     const educationTimeline = document.getElementById('education-timeline');
     if (educationTimeline) {
