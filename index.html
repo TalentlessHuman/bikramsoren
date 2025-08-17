@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikram Soren | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="theme-switcher-container" style="position:fixed;top:24px;right:32px;z-index:999;">
+        <button id="theme-toggle-btn" class="theme-toggle-btn">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li class="active" data-tab="home"><i class="fas fa-home"></i> <span>Home</span></li>
+                <li data-tab="projects"><i class="fas fa-code"></i> <span>Projects</span></li>
+                <li data-tab="experience"><i class="fas fa-briefcase"></i> <span>Experience</span></li>
+                <li data-tab="education"><i class="fas fa-graduation-cap"></i> <span>Education</span></li>
+                <li data-tab="skills"><i class="fas fa-tools"></i> <span>Skills</span></li>
+                <li data-tab="achievements"><i class="fas fa-trophy"></i> <span>Achievements</span></li>
+                <li data-tab="resume"><i class="fas fa-file-alt"></i> <span>Resume</span></li>
+                <li data-tab="connect"><i class="fas fa-envelope"></i> <span>Connect</span></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="home" class="tab-content active">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="assets/profile.jpg" alt="Bikram Soren">
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="typing-text"></h1>
+                        <h2>Full Stack Developer | IoT Developer | Researcher </h2>
+                        <p class="welcome-text">Thank you for visiting my portfolio.</p><br>
+                        <div class="contact-buttons">
+                            <a href="mailto:bikramsoren222@email.com" class="contact-btn"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/bikram-soren-9260ba254" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/TalentlessHuman" target="_blank" class="contact-btn"><i class="fab fa-github"></i></a>
+                            <a href="https://x.com/BikramSorenWPTH" target="_blank" class="contact-btn"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="tab-content">
+                <h2 class="section-title">My Projects</h2>
+                <div class="project-tabs">
+                    <button class="tab-btn active" data-target="completed-projects">Completed</button>
+                    <button class="tab-btn" data-target="ongoing-projects">Ongoing</button>
+                </div>
+                <div id="completed-projects" class="projects-container active">
+                    <div class="projects-grid" id="completed-projects-grid"></div>
+                </div>
+                <div id="ongoing-projects" class="projects-container">
+                    <div class="projects-grid" id="ongoing-projects-grid"></div>
+                </div>
+            </section>
+
+            <section id="experience" class="tab-content">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="timeline" id="experience-timeline"></div>
+            </section>
+
+            <section id="education" class="tab-content">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline" id="education-timeline"></div>
+            </section>
+
+            <section id="skills" class="tab-content">
+                <h2 class="section-title">Skills & Tools</h2>
+                <div class="skills-container"></div>
+            </section>
+            
+            <section id="achievements" class="tab-content">
+                <h2 class="section-title">Achievements & Certifications</h2>
+                <div class="achievements-grid" id="achievements-grid">
+                    </div>
+            </section>
+
+            <section id="resume" class="tab-content">
+                <h2 class="section-title">My Resume</h2>
+                <div class="resume-container">
+                    <iframe src="assets/resume.pdf" class="resume-iframe" title="Bikram Soren's Resume"></iframe>
+                    <a href="assets/resume.pdf" download="Bikram_Soren_Resume.pdf" class="download-btn">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </section>
+
+            <section id="connect" class="tab-content">
+                <h2 class="section-title">Connect With Me</h2>
+                <div class="connect-split-layout">
+                    <div class="socials-side">
+                        <h3>Find Me Online</h3>
+                        <div class="social-icons-vertical">
+                           <a href="https://github.com/TalentlessHuman" target="_blank" class="social-item">
+                                <div class="social-icon github"><i class="fab fa-github"></i></div>
+                                <span class="social-label">GitHub</span>
+                            </a>
+                             <a href="https://www.linkedin.com/in/bikram-soren-9260ba254/" target="_blank" class="social-item">
+                                <div class="social-icon linkedin"><i class="fab fa-linkedin"></i></div>
+                                <span class="social-label">LinkedIn</span>
+                            </a>
+                            <a href="https://www.instagram.com/bikram.tathastu" target="_blank" class="social-item">
+                                <div class="social-icon instagram"><i class="fab fa-instagram"></i></div>
+                                <span class="social-label">Instagram</span>
+                            </a>
+                            <a href="https://www.facebook.com/TalentlessB" target="_blank" class="social-item">
+                                <div class="social-icon facebook"><i class="fab fa-facebook-f"></i></div>
+                                <span class="social-label">Facebook</span>
+                            </a>
+                            <a href="https://x.com/BikramSorenWPTH" target="_blank" class="social-item">
+                                <div class="social-icon x-twitter"><i class="fab fa-twitter"></i></div>
+                                <span class="social-label">X (Twitter)</span>
+                            </a>
+                            <a href="https://www.youtube.com/@imx-bikram" target="_blank" class="social-item">
+                                <div class="social-icon youtube"><i class="fab fa-youtube"></i></div>
+                                <span class="social-label">YouTube</span>
+                            </a>
+                            <a href="https://www.duolingo.com/profile/Bikram_Origin" target="_blank" class="social-item">
+                                <div class="social-icon duolingo"><i class="fas fa-language"></i></div>
+                                <span class="social-label">Duolingo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class="form-side">
+                        <h3>Send Me a Message</h3>
+                        <form id="contactForm" action="https://formspree.io/f/mrblvldw" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="_replyto" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            <div id="formStatus" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
