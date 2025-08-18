@@ -52,6 +52,7 @@
                             <a href="https://www.linkedin.com/in/bikram-soren-9260ba254" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i></a>
                             <a href="https://github.com/TalentlessHuman" target="_blank" class="contact-btn"><i class="fab fa-github"></i></a>
                             <a href="https://x.com/BikramSorenWPTH" target="_blank" class="contact-btn"><i class="fab fa-twitter"></i></a>
+                            <a href="#" id="share-btn" class="contact-btn"><i class="fas fa-share-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -160,6 +161,17 @@
                 </div>
             </section>
         </main>
+    </div>
+    <div id="share-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Share this Portfolio</h3>
+            <p>Copy the link below to share it with others.</p>
+            <div class="share-link-container">
+                <input type="text" id="share-link-input" readonly>
+                <button id="copy-link-btn">Copy</button>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
