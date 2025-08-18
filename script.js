@@ -279,7 +279,59 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-
+    // SHARE BUTTON LOGIC
+    const shareBtn = document.getElementById('share-btn');
+    const modal = document.getElementById('share-modal');
+    const closeBtn = document.querySelector('.close-btn');
+    const shareLinkInput = document.getElementById('share-link-input');
+    const copyLinkBtn = document.getElementById('copy-link-btn');
+    
+    if (shareBtn) {
+        shareBtn.addEventListener('click', async (event) => {
+            event.preventDefault();
+    
+            const shareData = {
+                title: "Bikram Soren | Portfolio",
+                text: "Check out Bikram Soren's impressive portfolio!",
+                url: window.location.href
+            };
+    
+            if (navigator.share) {
+                try {
+                    await navigator.share(shareData);
+                    console.log('Portfolio shared successfully');
+                } catch (err) {
+                    console.log(`Couldn't share portfolio: ${err}`);
+                }
+            } else {
+                shareLinkInput.value = window.location.href;
+                modal.classList.remove('hidden');
+            }
+        });
+    }
+    
+    if (modal) {
+        closeBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+    
+        window.addEventListener('click', (event) => {
+            if (event.target == modal) {
+                modal.classList.add('hidden');
+            }
+        });
+    
+        copyLinkBtn.addEventListener('click', () => {
+            shareLinkInput.select();
+            navigator.clipboard.writeText(shareLinkInput.value).then(() => {
+                copyLinkBtn.textContent = 'Copied!';
+                setTimeout(() => {
+                    copyLinkBtn.textContent = 'Copy';
+                }, 2000);
+            });
+        });
+    }
+    
     // SCROLL ANIMATION 
     function setupObserver() {
         const observer = new IntersectionObserver((entries) => {
