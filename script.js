@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
             const shareData = {
                 title: "Bikram Soren | Portfolio",
-                text: "Check out Bikram Soren's impressive portfolio!",
+                text: "Check out Bikram Soren's portfolio!",
                 url: window.location.href
             };
     
