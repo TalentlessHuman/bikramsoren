@@ -223,7 +223,8 @@ document.addEventListener('DOMContentLoaded', function() {
             issuer: "COPI KGEC, IMAGEIDGP LAB",
             date: "3rd July 2025",
             description: "This certificate is awarded to Bikram Soren, in recognition of successfully completing a research internship at the ImageIDGP Lab, showcasing dedication, expertise, and outstanding contributions to the field.",
-            image: "assets/imageidgp.jpg"
+            image: "assets/imageidgp.jpg",
+            link: "drive"
     ];
 
     const achievementsGrid = document.getElementById('achievements-grid');
