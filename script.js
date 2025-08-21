@@ -217,7 +217,13 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "THE WORLD RECORD OF FASTEST TIME TO SOLVE MIRROR RUBIK'S CUBE BLINDFOLDED USING ONE HAND IS ACHIEVED BY BIKRAM SOREN ON 27 JULY 2022 IN UTTAR LATABARI, WEST BENGAL ,INDIA. HE (Born 10 March, 2005) SOLVED MIRROR RUBIK'S CUBE BLINDFOLDED USING ONE HAND IN 4 MINUTES 56.70 SECONDS AND HAS SET A RECORD FOR THE WORLDWIDE BOOK OF RECORDS.",
             image: "assets/wwbor.png",
             link: "https://www.worldwideworldrecords.com/post/fastest-time-to-solve-mirror-rubik-s-cube-blindfolded-using-one-hand#:~:text=THE%20WORLD%20RECORD%20OF%20FASTEST,LATABARI%2C%20WEST%20BENGAL%20%2CINDIA." // TODO: Add the actual verification link
-        }
+        },
+        {
+            title: "CERTIFICATE OF COMPLETION OF A RESEARCH INTERNSHIP AT THE IMAGEIDGP LAB",
+            issuer: "COPI KGEC, IMAGEIDGP LAB",
+            date: "3rd July 2025",
+            description: "This certificate is awarded to Bikram Soren, in recognition of successfully completing a research internship at the ImageIDGP Lab, showcasing dedication, expertise, and outstanding contributions to the field.",
+            image: "assets/imageidgp.jpg"
     ];
 
     const achievementsGrid = document.getElementById('achievements-grid');
