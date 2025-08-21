@@ -225,6 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "This certificate is awarded to Bikram Soren, in recognition of successfully completing a research internship at the ImageIDGP Lab, showcasing dedication, expertise, and outstanding contributions to the field.",
             image: "assets/imageidgp.jpg",
             link: "drive"
+        }
     ];
 
     const achievementsGrid = document.getElementById('achievements-grid');
